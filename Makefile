@@ -2,7 +2,9 @@
 TARGET = daisyPolysynth
 
 # Sources
-CPP_SOURCES = ./src/daisyPolysynth.cpp
+CPP_SOURCES = \
+	./src/main.cpp \
+  	./src/midi_uart_monitor.cpp
 
 # Library Locations
 LIBDAISY_DIR = ../DaisyExamples/libDaisy/
