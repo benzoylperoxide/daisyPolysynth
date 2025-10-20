@@ -1,9 +1,6 @@
 # daisyPolysynth
 
-## Author
-
-<!-- Insert Your Name Here -->
-
 ## Description
 
-<!-- Describe your example here -->
+Personal Daisy Seed–based polysynth experiment using UART MIDI input and DaisySP synthesis modules.
+In development! Progress to be logged.
