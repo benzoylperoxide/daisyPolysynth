@@ -1,5 +1,6 @@
 #pragma once
 #include "daisy_seed.h"
+#include <cstdint>
 
 class MidiUartMonitor {
 public:
@@ -17,10 +18,9 @@ public:
 
   // begin rx
   void Start();
-  void Stop();
 
   // NON BLOCKING. drains events, filters to channel-voice, prints
-  // with rate limit, and invokes the user callback if set.
+  // with rate limit, and invokes the user callback if set
   void Poll();
 
   // control
@@ -42,7 +42,7 @@ private:
   bool monitor_enabled_ = true;
   uint32_t dropped_ = 0;
 
-  // small FIFO for incoming events ready to print/dispatch.
+  // small FIFO for incoming events ready to print/dispatch
   daisy::FIFO<daisy::MidiEvent, 128> event_log_;
 
   // rate limit helper
