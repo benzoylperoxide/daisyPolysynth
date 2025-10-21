@@ -9,3 +9,7 @@ build/
 .idea/
 .DS_Store
 Thumbs.db
+
+# bear
+compile_commands.json
+
